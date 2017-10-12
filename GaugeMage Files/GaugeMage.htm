@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>
+GaugeMage.com
+    </title>
+    <style>
+        body {
+            color: blue;
+        }
+    </style>
+    <script type="text/javascript" src = "simpleGame/js"> 
+    </script>
+    <script type="text/javascript"> //The Javascript for the button
+        function figureName(){
+            var txtName = document.getElementById("txtName");
+                var userName = txtName.value;
+                    alert("Are you ready to read all of this information " + userName + "!");
+                txtName.style.display = "none";
+            form1.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <form id="form1">
+        <fieldset>
+            <label for="txtName">
+                Type your name
+            </label>
+            <input type="text" 
+                   id="txtName"
+                   value="Enter your name here"/>
+            <button type="button" onclick="figureName()">/
+                Submit
+            </button>
+        </fieldset>
+    </form>
+    <pre>
+This is made by 
+  ________                              _____
+ /  _____/_____   __ __  ____   ____   /     \ _____     ____   ____  
+/   \  ___\__  \ |  |  \/ ___\_/ __ \ /  \ /  \\__  \   / ___\_/ __ \ 
+\    \_\  \/ __ \|  |  / /_/  >  ___//    Y    \/ __ \_/ /_/  >  ___/ 
+ \______  (____  /____/\___  / \___  >____|__  (____  /\___  / \___  >
+        \/     \/     /_____/      \/        \/     \//_____/      \/ 
+    </pre>
+    <pre>
+    Sombra is BAE
+    
+  _________             ___.                 
+ /   _____/ ____   _____\_ |______________   
+ \_____  \ /  _ \ /     \| __ \_  __ \__  \  
+ /        (  <_> )  Y Y  \ \_\ \  | \// __ \_
+/_______  /\____/|__|_|  /___  /__|  (____  /
+        \/             \/    \/           \/ 
+    
+    </pre>
+    <p>
+Cool Buttons
+    </p>
+        <input type="radio" name="q1" value="y" class="radio">Cool
+        <input type="radio" name="q1" value="n">Buttons
+    <p>
+ColorBoard
+    </p>
+    <button id="color">Change color from Red to Blue!</button>
+        <script> //And here comes the messy code XD
+            document.getElementById('color').onclick = changeColor;
+	        var currentColor = "red";
+                function changeColor() {
+		            if(currentColor == "red"){
+                        document.body.style.color = "blue";
+		                currentColor = "blue";
+		            } else {
+		                document.body.style.color = "red";
+		                currentColor = "red"
+		            }
+                return currentColor;
+            }
+    </script>
+    <button id="color2">Change color from Green to Brown!</button>
+        <script>
+            document.getElementById('color2').onclick = changeColor2;
+	        var currentColor = "brown";
+                function changeColor2() {
+		            if(currentColor == "brown"){
+                        document.body.style.color = "green";
+		                currentColor = "green";
+		            } else {
+		                document.body.style.color = "brown";
+		                currentColor = "brown"
+		            }
+                return currentColor;
+            }
+    </script>
+    <button id="color3">Change color from Orange to Yellow!</button>
+        <script>
+            document.getElementById('color3').onclick = changeColor3;
+	        var currentColor = "Yellow";
+                function changeColor3() {
+		            if(currentColor == "Yellow"){
+                        document.body.style.color = "Orange";
+		                currentColor = "Orange";
+		            } else {
+		                document.body.style.color = "Yellow";
+		                currentColor = "Yellow"
+		            }
+                return currentColor;
+            }
+    </script>
+    <button id="color4">Change color from Purple to Black!</button>
+        <script>
+            document.getElementById('color4').onclick = changeColor4;
+	        var currentColor = "Black";
+                function changeColor4() {
+		            if(currentColor == "Black"){
+                        document.body.style.color = "Purple";
+		                currentColor = "Purple";
+		            } else {
+		                document.body.style.color = "Black";
+		                currentColor = "Black"
+		            }
+                return currentColor;
+            }
+    </script>
+    <button id="color5">Change color from White to Silver!</button>
+        <script>
+            document.getElementById('color5').onclick = changeColor5;
+	        var currentColor = "#C0C0C0";
+                function changeColor5() {
+		            if(currentColor == "#C0C0C0"){
+                        document.body.style.color = "White";
+		                currentColor = "White";
+		            } else {
+		                document.body.style.color = "#C0C0C0";
+		                currentColor = "#C0C0C0"
+		            }
+                return currentColor;
+            }
+    </script>
+    <button id="color6">Change background color from Black to Red!</button>
+        <script>
+            document.getElementById('color6').onclick = changeColor6;
+	        var currentColor = "red";
+                function changeColor6() {
+		            if(currentColor == "red"){
+                        document.body.style.background = "black";
+		                currentColor = "black";
+		            } else {
+		                document.body.style.background = "red";
+		                currentColor = "red"
+		            }
+                return currentColor;
+            }
+    </script>
+    <button id="color7">Change background color from Silver to White!</button>
+        <script>
+            document.getElementById('color7').onclick = changeColor7;
+	        var currentColor = "white";
+                function changeColor7() {
+		            if(currentColor == "white"){
+                        document.body.style.background = "#C0C0C0";
+		                currentColor = "#C0C0C0";
+		            } else {
+		                document.body.style.background = "white";
+		                currentColor = "white"
+		            }
+                return currentColor;
+            }
+    </script>
+    <button id="color8">Change background color from Green to Yellow!</button>
+        <script>
+            document.getElementById('color8').onclick = changeColor8;
+            var currentColor = "Yellow";
+                function changeColor8() {
+                    if(currentColor == "Yellow"){
+                        document.body.style.background = "green";
+                        currentColor = "green";
+                    } else {
+                        document.body.style.background = "Yellow";
+                        currentColor = "Yellow"
+                    }
+                return currentColor;
+            }
+    </script>
+    <button id="color9">Change background color from Orange to Brown!</button>
+        <script>
+            document.getElementById('color9').onclick = changeColor9;
+            var currentColor = "brown";
+                function changeColor9() {
+                    if(currentColor == "brown"){
+                        document.body.style.background = "Orange";
+                        currentColor = "Orange";
+                    } else {
+                        document.body.style.background = "Brown";
+                        currentColor = "brown"
+                    }
+                return currentColor;
+            }
+    </script>
+    <button id="color10">Change background color from Purple to Blue!</button>
+        <script>
+            document.getElementById('color10').onclick = changeColor10;
+            var currentColor = "Blue";
+                function changeColor10() {
+                    if(currentColor == "Blue"){
+                        document.body.style.background = "Purple";
+                        currentColor = "Purple";
+                    } else {
+                        document.body.style.background = "Blue";
+                        currentColor = "Blue"
+                    }
+                return currentColor;
+            }
+    </script>
+    <form id="gauge1">
+        <fieldset>
+            <p>
+                <img src="GaugeMage.png" alt="The Ultimate GaugeMage">
+            </p>
+            <p>
+                There are different types of tools and weapons that the Ultimate GaugeMage uses.
+            </p>
+            <p>
+                The first type are sparklers. Sparklers are the most common type of weapon that associates in electrickery. They are the cheapest type of weapon.    
+            </p>
+            <p>
+                The second types are sticks. Sticks are mostly used for utility. They are uncommon and cost more than sparklers.
+            </p>
+            <p>
+                The next type are staffs. Staffs are a combination of sparklers and sticks. They are used for weaponry and utility. They are meant for the royal. They are the rarest and are really expensive.
+            </p>
+            <p>
+                Another type is a Sp-Hybrid. It's a mixture of a sparkler and a staff.
+            </p>
+            <p>
+                Another type is a St-Hybrid. It's a mixture of a stick and staff.
+            </p>
+            <p>
+                The Last type is the Ult-Staffs. The Ult Staffs are the ultimate staffs and if you possess one of them you will become one of the Ultimate GaugeMages. You are probobly wondering... What is an Ultimate GaugeMage. Well an Ultimate GaugeMage is a GaugeMage which is more powerful than the rest of the GaugeMages. Right now you must be thinking this. "I already know that GaugeMages are strong and awesome but now there are ULTIMATE GAUGEMAGES!" There is something else about Ult-Staffs. Ult-Staffs helped create the world!
+            </p>
+            <p>
+                GaugeMages usually have a sparkler and a stick. If you own a Sp-Hybrid or a St-Hybrid you should get a staff. If you have a staff that is all you need.
+            </p>
+            <p>
+               The Gauge-L Sparkler:
+            </p>
+               <p>
+                   <img src="Gauge-L Sparkler.png" alt="Gauge-L Sparkler">
+               </p>
+               <p>
+                The Gauge-L Sparkler is used for making lightning and searing shots to create an energy source or used to zap an enemy.
+               </p>
+            <p>
+               The Gauge-G Stick:
+            </p>
+               <p>
+                   <img src="Gauge-G Stick.png" alt="Gauge-G Stick">
+               </p>
+               <p>
+                   The Gauge-G Stick is used to get gears moving and can move gears out of their position
+               </p>
+            <p>
+               The Gauge-W Stick
+            </p>
+               <p>
+                   <img src="Gauge-W Stick.png" alt="Gauge-W Stick">
+               </p>
+               <p>
+                   The Gauge-W Stick is used for Creating/Conjuring Water and little electric zaps. You can combine the water and electric zaps to make a storm cloud. It can also make plants grow quicker.
+               </p>
+            <p>
+               The Gauge-I Staff
+            </p>
+               <p>
+                   <img src="Gauge-I Staff.png" alt="Gauge-I Staff">
+               </p>
+               <p>
+                   The Gauge-I Staff is used to freeze water, ice, electricity, and love
+               </p>
+            <p>
+                The Gauge-F Staff
+            </p>
+                <p>
+                    <img src="Gauge-F Staff.png" alt="Gauge-F Staff">
+                </p>
+                <p>
+                    The Gauge-F Staff is used to create/conjure fire, lava, volcanoes, the mantle of the very earth right out of its spot which will wreck havoc, stars, the sun, meteors, meteor showers, and comets. Even though it can do these very things it will have a steaming cooldown. Literally. The staff will steam!!!
+                </p>
+            <p>
+                The Gauge-P Sp-Hybrid
+            </p>
+                <p>
+                    <img src="Gauge-P%20Sp-Hybrid.png" alt="Gauge-P Sp-Hybrid">
+                </p>
+                <p>
+                    The Gauge-P Sp-Hybrid is used to poison enemies it has a rare chance of killing its target. The poison will stop after 10:00 minutes dealing 5 damage per second. 
+                </p>
+            <p>
+                The Gauge-H Sp-Hybrid
+            </p>
+                <p>
+                    <img src="Gauge-H%20Sp-Hybrid.png" alt="Gauge-H Sp-Hybrid">
+                </p>
+                <p>
+                    The Gauge-H Sp-Hybrid is used to make two living things breed, but before these two living things breed, they go through a long process of falling in love and bla bla bla. However if you hack all of the sparklers, sticks, staffs, sp-hybrids, and st-hybrids in the whole entire world, you can channel their power to make the two things breed right away.
+                </p>
+            <p>
+                The Gauge-S Sp-Hybrid        
+            </p>
+                <p>
+                    <img src="Gauge-S%20Sp-Hybrid.png" alt="Gauge-S Sp-Hybrid">
+                </p>
+                <p>
+                    The Gauge-S Sp-Hybrid is a sonic tool. Meaning it is powered by sonic energy or sonic using objects, like a fusion reactor or something that you crank or something else that requires motion. One of the things that it can do is make a twister of motion which means you can't see it. It can also send you back in time for a certain amount of time. The person who made this Sp-Hybrid was a Dr.Who fan so he made it like a sonic screwdriver. It can destroy objects and acts like a sonic screwdriver.    
+                </p>
+            <p>
+                The Gauge-W Staff
+            </p>
+                <p>
+                    <img src="Gauge-W%20Staff.png" alt="Gauge-W Staff.png">
+                </p>
+                <p>
+                    The Gauge-W Staff is associated with wind so it will make twisters, tornados, hurricanes and will make water currents go opposite so if a WaterMage, GaugeMage that associates with water attacks you, you can reverse it so the water will go the other way and will hit your opponent.   
+                </p>
+            <p>
+                The Ultimate Gauge-Time Staff
+            </p>
+                <p>
+                    <img src="Ultimate%20Gauge-Time%20Staff.png"  alt="The Ultimate Gauge-Time Staff">   
+                </p>
+                <p>
+                    The Ultimate Gauge-Time Staff is one of the Ult staffs. It assosiates in time. With this staff you can reverse time! You can go back in time and forward in time! This staff created time in this world. This staff is also dangerous. If you change the past the future will be changed!! Whoever holds this will live forever. The Ultimate GaugeMage that you know uses this staff the most often.
+                </p>
+            <p> 
+                The Ultimate Gauge-Space Staff
+            </p>
+                <p>
+                    <img src="Ultimate%20Gauge-Space%20Staff.png" alt="The Ultimate Gauge-Space Staff">
+                </p>
+                <p>
+                    The Ultimate Gauge-Space Staff is also one of the Ult-Staffs. It assosiates in space. You will find this staff in space. If it isn't in space then space will collapse and black holes will form. With this Ult-Staff you can create and shoot stars. Form black holes. With this staff you will become space. You will create and control it.
+                </p>
+            <p>
+                The Ultimate Gauge-Dark Staff
+            </p>
+                <p>
+                    <img src="Ultimate%20Gauge-Dark%20Staff.png" alt="The Ultimate Gauge-Dark Staff">
+                </p>
+                <p>
+                    Thw Ultimate Gauge-Dark Staff is the most devasting of the staffs. This staff created darkness. If you reverse the Ultimate Gauge-Dark Staff with the Gauge S Sp-Hybrid you can make it create light! That is why if you own this Ult-Staff it is handy to own the Gauge-S Sp-Hybrid.
+                </p>
+            <p>
+                The Ultimate Gauge-Intel Staff
+            </p>
+                <p>
+                    <img src="Ultimate%20Gauge-Intel%20Staff.png" alt="The Ultimate Gauge-Intel Staff">
+                </p>
+                <p>
+                    The Ultimate Gauge-Intel Staff is used to make the stupid, wise. It is to  be or not to be. Is that the question? Sorry for messing with you. The Ultimate Gauge-Intel Staff is also used for making magic missiles. If you haven't noticed already there is a blue ball in the center of the Ult-Staff. It is the last of its race. It will help you make disicions.
+                </p>
+        </fieldset>
+    </form>
+</body>
+</html>

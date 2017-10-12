@@ -1,0 +1,149 @@
+<html lang="us">
+    <head>
+        <title>
+            Test Webpage
+        </title>
+        <script type="text/javascript"> //The Javascript
+        function figureName(){
+            var txtName = document.getElementById("txtName");
+                var userName = txtName.value;
+                    alert("This is a test " + userName + "!");
+                txtName.style.display = "none";
+            form1.style.display = "none";
+        }
+    </script>
+    <script src="HackyScript.js">
+    </script>
+    </head>
+    <body>
+        <h1>
+            This is made by,
+        </h1>
+        <pre>
+  ________                              _____
+ /  _____/_____   __ __  ____   ____   /     \ _____     ____   ____  
+/   \  ___\__  \ |  |  \/ ___\_/ __ \ /  \ /  \\__  \   / ___\_/ __ \ 
+\    \_\  \/ __ \|  |  / /_/  >  ___//    Y    \/ __ \_/ /_/  >  ___/ 
+ \______  (____  /____/\___  / \___  >____|__  (____  /\___  / \___  >
+        \/     \/     /_____/      \/        \/     \//_____/      \/ 
+        </pre>
+        <h6>
+            I made that by the way!
+        </h6>
+        <form id="form1">
+        <fieldset>
+            <label for="txtName">
+                Type your name
+            </label>
+            <input type="text" 
+                   id="txtName"
+                   value="Enter your name here"/>
+            <button type="button" onclick="figureName()">
+                Submit
+            </button>
+        </fieldset>
+    </form>
+        <fieldset>
+            <h1>
+                <strong>
+                    This is just for fun.
+                </strong>
+            </h1>
+            <h2>
+                You can probably say that it is my playground.
+            </h2>
+            <p>
+                <strong>
+                    In League of Legends I main Ekko at the moment.
+                </strong>
+            </p>
+            <p>
+                <strong>
+                In Overwatch I main Sombra.
+                </strong>
+                All of my Sombra tips and tricks are down below.
+            </p>
+            <pre>
+  _________             ___.                 
+ /   _____/ ____   _____\_ |______________   
+ \_____  \ /  _ \ /     \| __ \_  __ \__  \  
+ /        (  <_> )  Y Y  \ \_\ \  | \// __ \_
+/_______  /\____/|__|_|  /___  /__|  (____  /
+        \/             \/    \/           \/ 
+            </pre>
+            <h1>
+                <img src="sombra-screenshot-001-38f80f39ca24b511463482b7441cb6c7d594da6256958434eae37d68ab8ef3894faf798f5eb4a79b40bf300667ccb44fed0b605b30f11c592260e27817569fa8.jpg" alt="SOMBRA" style="width:500px;height:500px;"> <!--img-->
+            </h1>
+            <h2>
+                Here is a link
+            </h2>
+            <span style="color:blue;font-weight:bold"> <!-- Span -->
+Span me daddy.
+            </span>
+            <h1>
+                <a href="https://www.google.com/">Google Link</a>
+            </h1>
+        </fieldset>
+            <script type="text/javascript">
+
+/*
+* World Populution Counter - By JavaScript Kit (http://www.javascriptkit.com)
+* Based on code by Adam Brown
+* This notice MUST stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com) for this script and more
+*/
+
+function maind(){
+	startdate = new Date()
+	now(startdate.getYear(),startdate.getMonth(),startdate.getDate(),startdate.getHours(),startdate.getMinutes(),startdate.getSeconds())
+}
+
+
+function ChangeValue(number,pv){
+	numberstring =""
+	var j=0 
+	var i=0
+	while (number > 1)
+	 { 
+
+	    numberstring = (Math.round(number-0.5) % 10) + numberstring
+	    number= number / 10
+	    j++
+	    if (number > 1 && j==3) { 
+			numberstring = "," + numberstring 
+			j=0}
+	    i++
+	 }
+
+	 numberstring=numberstring
+
+if (pv==1) {document.getElementById("worldpop").innerHTML=numberstring }
+}
+
+
+function now(year,month,date,hours,minutes,seconds){       
+startdatum = new Date(year,month,date,hours,minutes,seconds)
+
+var now = 5600000000.0
+var now2 = 5690000000.0
+var groeipercentage = (now2 - now) / now *100
+var groeiperseconde = (now * (groeipercentage/100))/365.0/24.0/60.0/60.0 
+nu = new Date ()                
+schuldstartdatum = new Date (96,1,1)                            
+secondenoppagina = (nu.getTime() - startdatum.getTime())/1000
+totaleschuld= (nu.getTime() - schuldstartdatum.getTime())/1000*groeiperseconde + now
+ChangeValue(totaleschuld,1);
+
+
+timerID = setTimeout("now(startdatum.getYear(),startdatum.getMonth(),startdatum.getDate(),startdatum.getHours(),startdatum.getMinutes(),startdatum.getSeconds())",200)
+}
+
+window.onload=maind
+</script>
+
+Current world population (estimated): <span id="worldpop" style="font-weight: bold"></span>.
+
+<p style="font: normal 11px Arial">This free script provided by<br />
+<a href="http://www.javascriptkit.com">JavaScript Kit</a></p>
+    </body>
+</html>

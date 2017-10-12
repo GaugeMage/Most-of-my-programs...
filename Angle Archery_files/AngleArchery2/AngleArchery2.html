@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>
+Angle Archery
+    </title>
+    <style>
+        body {
+            color: black;
+            background-color: lightgray;
+            }
+        <!--
+            a:link { color: black; text-decoration: none}
+            a:visited { color: black; text-decoration: none}
+            a:hover { color: black; text-decoration: none}
+            a:active { color: black; text-decoration: none}
+        -->
+    </style>
+</head>
+<body>
+    <pre>
+This is my first program. I hope you enjoy!
+This is made by
+  ________                              _____                         
+ /  _____/_____   __ __  ____   ____   /     \ _____     ____   ____  
+/   \  ___\__  \ |  |  \/ ___\_/ __ \ /  \ /  \\__  \   / ___\_/ __ \ 
+\    \_\  \/ __ \|  |  / /_/  >  ___//    Y    \/ __ \_/ /_/  >  ___/ 
+ \______  (____  /____/\___  / \___  >____|__  (____  /\___  / \___  >
+        \/     \/     /_____/      \/        \/     \//_____/      \/ 
+    </pre>
+    <form id="form10">
+    <p>
+        Here are the Rules:    
+    </p>
+    <p>
+        Press the W key once to shoot the bow.
+    </p>
+    <p>
+        Press the A key to aim left.
+    </p>
+    <p>
+        Press the D key to aim right.
+    </p>
+    <p>
+        Press the Space key to put the arrow back in the bow
+    </p>
+    <p>
+        If you hit a target you will be asked a certain amount of question(s).
+    </p>
+    <p>
+        If you hit a red target you will be asked 1 question.
+    </p>
+    <p>
+        If you hit a gold, blue, or green target you will be asked 1-3 questions.    
+    </p>
+    <p>
+        If you get more than 100 points you will go to level 2
+    </p>
+        For each 100 points you get the higher the level.
+    </form>
+    <p>
+        When you enter your name the game will start.
+    </p>
+    <p>
+        You will have 60 seconds to score
+    </p>
+    <p>
+        Only 60 seconds to get to level 5!
+    </p>
+    </form>
+    <form id="form2">
+        <fieldset>
+            <p>
+                Key
+            </p>
+                <ul>
+                    <li>
+                        Red Targets = 1 point
+                    </li>
+                    <li>
+                        Gold Targets = 20 - 60 points and Slo-Mo!
+                    </li>
+                    <li>    
+                        Blue Targets = 0 - 100 points!
+                    </li>
+                    <li>
+                        Green Targets = 20 - 60 points and Double Shot!
+                    </li>
+                    <li>
+                        Keep in mind that this is still quite buggy so don't expect a lot.
+                    </li>
+                </ul>
+        </fieldset>
+    </form>
+    <form id="form1">
+        <fieldset>
+            <center>
+            <label for="txtName">
+                Type your name
+            </label>
+            </center>
+            <center>
+            <input type="text" 
+                   id="txtName"
+                   value="Enter your name here"/>
+            <button type="button" id="figureName">
+                Submit
+            </button>
+            </center>
+        </fieldset>
+    </form>
+    <form id="form3">
+        <input type="text" id="degrees" value="90">
+        <input type="text" id="score" value="0">
+    </form>
+    <center>
+        <div id="output">
+        Angle:
+        </div>
+        <div id="output2">
+        Name:
+        </div>
+        <div id="output3">
+        Score:
+        </div>
+        <input type="text" id="txt" value="0">
+    </center>
+    <script type="text/javascript" src = "simpleGame_1_0.js"> 
+    </script>
+    <script type="text/javascript" src = "AngleArchery2.js">
+    </script>
+    </body>
+</html>
